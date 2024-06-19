@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "sources": ["../../src/pages/main/main.js"],
+  "sources": ["../../src/js/main.js"],
   "sourcesContent": ["console.log(\"Main init\");\n"],
   "mappings": "MAAA,QAAQ,IAAI,WAAW",
   "names": []
