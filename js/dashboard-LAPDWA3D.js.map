@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/pages/dashboard/dashboard.js"],
+  "sourcesContent": ["console.log(\"Dashboard init\");\n"],
+  "mappings": "MAAA,QAAQ,IAAI,gBAAgB",
+  "names": []
+}
