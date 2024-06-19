@@ -2,6 +2,8 @@
 
 Todo: add Medium link
 
+[Live Demo](https://lexey111.github.io/insane-nano-core/)
+
 In short: a builder for HTML+CSS+JS pages not based on a framework.
 
 ## Installation
