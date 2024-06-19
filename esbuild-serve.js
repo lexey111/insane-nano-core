@@ -4,8 +4,8 @@ import htmlPlugin from '@chialab/esbuild-plugin-html'
 const ctx = await esbuild.context({
     logLevel: 'debug',
     entryPoints: [
-        'src/pages/main/index.html',
-        'src/pages/dashboard/dashboard.html'
+        'src/index.html',
+        'src/dashboard.html'
     ],
     assetNames: 'assets/[name]-[hash]',
     chunkNames: '[ext]/[name]-[hash]',

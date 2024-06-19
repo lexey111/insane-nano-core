@@ -2,12 +2,11 @@
   "name": "insane-nano-core",
   "version": "1.0.0",
   "description": "basic semi-static builder",
-  "main": "src/pages/main/main.js",
+  "main": "src/js/main.js",
   "type": "module",
   "scripts": {
     "cleanup": "bun rimraf ./dist",
-    "post-cleanup": "bun rimraf ./dist/dashboard ./dist/main",
-    "build": "bun run cleanup && bun esbuild.js && bun run post-cleanup",
+    "build": "bun run cleanup && bun esbuild.js",
     "start": "bun esbuild-serve.js",
     "deploy": "bun run build && git subtree push --prefix dist origin gh-pages"
   },
