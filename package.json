@@ -1,0 +1,28 @@
+{
+  "name": "insane-nano-core",
+  "version": "1.0.0",
+  "description": "basic semi-static builder",
+  "main": "src/pages/main/main.js",
+  "type": "module",
+  "scripts": {
+    "cleanup": "bun rimraf ./dist",
+    "post-cleanup": "bun rimraf ./dist/dashboard ./dist/main",
+    "build": "bun run cleanup && bun esbuild.js && bun run post-cleanup",
+    "start": "bun esbuild-serve.js",
+    "deploy": "bun run build && git subtree push --prefix dist origin gh-pages"
+  },
+  "keywords": [
+    "insane",
+    "frontend",
+    "builder",
+    "core"
+  ],
+  "author": "lexey111",
+  "license": "ISC",
+  "devDependencies": {
+    "@chialab/esbuild-plugin-html": "^0.18.2",
+    "esbuild": "^0.21.5",
+    "rimraf": "^5.0.7"
+  },
+  "dependencies": {}
+}
